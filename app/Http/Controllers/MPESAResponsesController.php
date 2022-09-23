@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
-class MpesaResponsesController extends Controller
+class MPESAResponsesController extends Controller
 {
     public function validation(Request $request)
     {
@@ -62,7 +62,6 @@ class MpesaResponsesController extends Controller
             'ThirdPartyTransID' => rand(3000, 10000)
         ];
     }
-
 
     public function confirmation(Request $request)
     {

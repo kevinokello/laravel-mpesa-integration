@@ -1,20 +1,21 @@
-import "./bootstrap";
-const { default: axios } = require("axios");
+import './bootstrap';
+const { default: axios } = require('axios');
 
-require('./bootstrap');
+// require('./bootstrap');
 
-document.getElementById("getAccessToken").addEventListener("click", (event) => {
-    event.preventDefault();
-    axios
-        .post("/get-token", {})
-        .then((response) => {
-            console.log(response.data);
-            document.getElementById("access_token").innerHTML = response.data;
-        })
-        .catch((error) => {
-            console.log(error);
-        });
+
+document.getElementById('getAccessToken').addEventListener('click', (event) => {
+    event.preventDefault()
+    axios.post('/get-token', {})
+    .then((response) => {
+        console.log(response.data);
+        document.getElementById('access_token').innerHTML = response.data
+    })
+    .catch((error) => {
+        console.log(error);
+    })
 });
+
 
 // document.getElementById('registerURLS').addEventListener('click', (event) => {
 //     event.preventDefault()
@@ -33,6 +34,8 @@ document.getElementById("getAccessToken").addEventListener("click", (event) => {
 //     })
 
 // });
+
+
 
 // document.getElementById('stkpush').addEventListener('click', (event) => {
 //     event.preventDefault()
@@ -55,6 +58,7 @@ document.getElementById("getAccessToken").addEventListener("click", (event) => {
 //         console.log(error);
 //     })
 // })
+
 
 // document.getElementById('b2csimulate').addEventListener('click', (event) => {
 //     event.preventDefault()
